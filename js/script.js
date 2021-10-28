@@ -87,32 +87,30 @@ $(document).ready(function () {
 
 
   // table_xre, table_wrap, tbody, custom_tr, custom_th, custom_td
-  // $('.table_xre .table_wrap .custom_tr .custom_th').each(function (index) {
-  //   setTimeout(function(){
-  //     var thisth = $(this);
-  //     $(thisth).css({ 'width': thisth.data('colwidth') + '%' });
-  //     $('.table_xre .table_wrap .tbody .custom_tr').each(function (ind, thistr) {
-  //       $(thistr).find('.custom_td').eq(index).css({ 'width': thisth.data('colwidth') + '%' });
-  //       if (thisth.hasClass('text_center')) {
-  //         $(thistr).find('.custom_td').eq(index).addClass('text_center');
-  //       }
-  //     });
-  //   },500)
-  // });
-  $('.leftSideBar_menu_option_list ul li').on('click', function(){
-    $('.table_xre .table_wrap .custom_tr .custom_th').each(function (index) {
-      setTimeout(function(){
-        var thisth = $(this);
-        $(thisth).css({ 'width': thisth.data('colwidth') + '%' });
-        $('.table_xre .table_wrap .tbody .custom_tr').each(function (ind, thistr) {
-          $(thistr).find('.custom_td').eq(index).css({ 'width': thisth.data('colwidth') + '%' });
-          if (thisth.hasClass('text_center')) {
-            $(thistr).find('.custom_td').eq(index).addClass('text_center');
-          }
-        });
-      },1000)
+  $('.table_xre .table_wrap .custom_tr .custom_th').each(function (index) {
+    var thisth = $(this);
+    $(thisth).css({ 'width': thisth.data('colwidth') + '%' });
+    $('.table_xre .table_wrap .tbody .custom_tr').each(function (ind, thistr) {
+      $(thistr).find('.custom_td').eq(index).css({ 'width': thisth.data('colwidth') + '%' });
+      if (thisth.hasClass('text_center')) {
+        $(thistr).find('.custom_td').eq(index).addClass('text_center');
+      }
     });
-  })
+  });
+  // $('.leftSideBar_menu_option_list ul li').on('click', function(){
+  //   $('.table_xre .table_wrap .custom_tr .custom_th').each(function (index) {
+  //     setTimeout(function(){
+  //       var thisth = $(this);
+  //       $(thisth).css({ 'width': thisth.data('colwidth') + '%' });
+  //       $('.table_xre .table_wrap .tbody .custom_tr').each(function (ind, thistr) {
+  //         $(thistr).find('.custom_td').eq(index).css({ 'width': thisth.data('colwidth') + '%' });
+  //         if (thisth.hasClass('text_center')) {
+  //           $(thistr).find('.custom_td').eq(index).addClass('text_center');
+  //         }
+  //       });
+  //     },1000)
+  //   });
+  // })
   // $('.table_xre .table_wrap .tbody .custom_tr .custom_td input[type="checkbox"]').on('click', function(){
   //   if($(this).prop('checked')){
   //     $(this).closest('.custom_tr').addClass('selected_row')
