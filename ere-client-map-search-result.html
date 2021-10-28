@@ -1,0 +1,714 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERE Map Add Client List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styleGuideOmne.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+
+<body class="pro_xre">
+    <!-- top omne bar -->
+    <div class="omne_bar">
+        <div class="custom_container">
+            <img src="./images/omne_with_tagline_rgb.png" title="omne_with_tagline_rgb" />
+        </div>
+    </div>
+    <!-- top omne bar -->
+
+    <!-- main nav bar -->
+    <div class="nav_menu">
+        <div class="custom_container">
+            <div class="row">
+                <div class="side_menu closed">
+                    <img src="./images/icons/ic-menu.svg" alt="ic-menu" />
+                </div>
+                <div class="tab_title text_18 font_600 p_2 h_100">
+                    ER Module
+                </div>
+                <div class="page_title text_16 font_500 p_1">
+                    Client - ERE Mapping
+                </div>
+                <div class="nav-items">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="./images/icons/ic-tools.svg" alt="ic-tools" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/icons/ic-notification.svg" alt="ic-notification" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/icons/ic-login-profile-image.png" alt="ic-login-profile-image" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main nav bar -->
+
+    <!-- sidebar_left -->
+    <div class="leftSideBar pt_4 pb_4 pl_1 pr_1">
+        <div class="sideNavItems">
+            <ul>
+                <li>
+                    <a href="" class="pt_2 pb_2 text_14"><span class="pr_4"><img src="./images/icons/ic-dashboard.svg"
+                                alt="ic-dashboard" /></span>
+                        <span class="text_hid">Dashnboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="pt_2 pb_2 text_14"><span class="pr_4"><img
+                                src="./images/icons/ic-green-signal.svg" alt="ic-green-signal" /></span>
+                        <span class="text_hid">Green Signal</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="pt_2 pb_2 text_14"><span class="pr_4"><img src="./images/icons/ic-hire-wf.svg"
+                                alt="ic-hire-wf" /></span>
+                        <span class="text_hid"> Hire WF</span></a>
+                </li>
+                <li>
+                    <a href="" class="pt_2 pb_2 text_14"><span class="pr_4"><img
+                                src="./images/icons/ic-po-extension.svg" alt="ic-po-extension" /></span>
+                        <span class="text_hid"> PO Extension</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="pt_2 pb_2 text_14"><span><img src="./images/icons/ic-paystub-verification.svg"
+                                alt="ic-paystub-verification" /></span>
+                        <span class="text_hid">BGV Redo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="pt_2 pb_2 text_14 active"><span class="pr_4"><img
+                                src="./images/icons/ic-bgv-redo.svg" alt="ic-bgv-redo" /></span>
+                        <span class="text_hid">BGV Redo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="pt_2 pb_2 text_14"><span class="pr_4"><img
+                                src="./images/icons/ic-offboarding-wf.svg" alt="ic-offboarding-wf" /></span>
+                        <span class="text_hid">Offboarding WF</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="pt_2 pb_2 text_14"><span class="pr_4"><img
+                                src="./images/icons/ic-termination-wf.svg" alt="ic-termination-wf" /></span>
+                        <span class="text_hid">Termination WF</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- sidebar_left -->
+
+    <!-- main wrapper -->
+    <div class="main_wrapper d-flex custom_container">
+        <div class="col-lg-12 mt_3 mx-auto p_0">
+            <div class="ere_card only_card">
+                <div class="client_list_table redo_check_status po_candidate p_3 table_xre">
+                    <div class="rcs_head flex-flow-row-wrap align-items-center">
+                        <h4 class="col-lg-12 p_0 text_18 font_600 mt_0 mb_3 primary_text_color">
+                            Search Result
+                            <div class="chips d-inline p_0 pt_0 pb_0 ml_3">
+                                <span class="chip">Alabama <img src="./images/icons/ic-close.svg" alt="ic-close"></span>
+                                <span class="chip">NewYork <img src="./images/icons/ic-close.svg" alt="ic-close"></span>
+                                <button class="modal_open border_0 bg_trans p_0" data-modalname="edit_ere_modal">
+                                    <img src="./images/icons/ic-edit-profile.svg" alt="" class="">
+                                </button>
+                            </div>
+                            <button class="border_0 bg_trans p_0 ml-auto float-right">
+                                <a href="#"><img src="./images/icons/ic-close.svg" alt="" class="" /></a>
+                            </button>
+                        </h4>
+                        <h4 class="col-lg-6 p_0 text_14 font_600 mt_0 mb_0 primary_text_color d-inline">
+                            Active Clients List (30 clients)
+                            <button class="primary_btn ml_2 px_3 py_2">Update</button>
+                        </h4>
+                        <div class="col-lg-6 update_info p_0 d-flex justify-content-end align-items-center">
+                            <span>
+                                <span class="filter_icon cursor_pointer"><img src="./images/icons/ic-excel-blue.svg"
+                                        alt="ic-import">Export to Excel</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rcs_body pt_4 xre_table">
+                        <!-- <div class="table_wrap accordion" id="accordion1">
+                            <div class="custom_tr accordion-group">
+                                <div class="custom_th text_center" data-colwidth="4">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="custom_th" data-colwidth="29">
+                                    Client Name
+                                    <span><img src="./images/icons/ic-topfilter-bottom.svg"
+                                            alt="ic-topfilter-bottom"></span>
+                                </div>
+                                <div class="custom_th" data-colwidth="14">
+                                    Client Code
+                                    <span><img src="./images/icons/ic-topfilter-bottom.svg"
+                                            alt="ic-topfilter-bottom"></span>
+                                </div>
+                                <div class="custom_th" data-colwidth="10">
+                                    Region
+                                    <span><img src="./images/icons/ic-topfilter-bottom.svg"
+                                            alt="ic-topfilter-bottom"></span>
+                                </div>
+                                <div class="custom_th" data-colwidth="15">
+                                    Project Location
+                                    <span><img src="./images/icons/ic-topfilter-bottom.svg"
+                                            alt="ic-topfilter-bottom"></span>
+                                </div>
+                                <div class="custom_th" data-colwidth="10">
+                                    Start Date
+                                    <span><img src="./images/icons/ic-topfilter-bottom.svg"
+                                            alt="ic-topfilter-bottom"></span>
+                                </div>
+                                <div class="custom_th" data-colwidth="10">
+                                    End Date
+                                    <span><img src="./images/icons/ic-topfilter-bottom.svg"
+                                            alt="ic-topfilter-bottom"></span>
+                                </div>
+                                <div class="custom_th text_center" data-colwidth="8">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="tbody">
+                                <div class="selected_row">
+                                    <div class="custom_td">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td" data-toggle="modal" data-target="#editRecordModal">
+                                        <span><button class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row selected_row">
+                                    <div class="custom_td">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row selected_row">
+                                    <div class="custom_td">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row selected_row">
+                                    <div class="custom_td">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row selected_row">
+                                    <div class="custom_td">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row">
+                                    <div class="custom_td">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row">
+                                    <div class="custom_td">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row">
+                                    <div class="custom_td">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row">
+                                    <div class="custom_td">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row">
+                                    <div class="custom_td">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row">
+                                    <div class="custom_td">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row">
+                                    <div class="custom_td">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row">
+                                    <div class="custom_td">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row">
+                                    <div class="custom_td">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                                <div class="custom_tr row">
+                                    <div class="custom_td">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="custom_td">AGS-Samsung Electronics Corporation</div>
+                                    <div class="custom_td">AG069</div>
+                                    <div class="custom_td">New York</div>
+                                    <div class="custom_td">Alabama</div>
+                                    <div class="custom_td">07/31/2020</div>
+                                    <div class="custom_td">03/04/2021</div>
+                                    <div class="custom_td"><span><button
+                                                class="primary_btn px_1 py_1 text_10">Update</button></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <table role="grid">
+                            <!---->
+                            <thead class="p-datatable-thead">
+                                <tr _ngcontent-pst-c127="" class="accordion-group ng-star-inserted">
+                                    <th _ngcontent-pst-c127="" class="w_custom_3"> &nbsp; </th>
+                                    <th _ngcontent-pst-c127="" class="w_custom_9"> Client Code </th>
+                                    <th _ngcontent-pst-c127="" class="w_custom_14"> ClientName </th>
+                                    <th _ngcontent-pst-c127="" class="w_custom_10"> Start Date </th>
+                                    <th _ngcontent-pst-c127="" class="w_custom_10"> End Date </th>
+                                    <th _ngcontent-pst-c127="" class="w_custom_14"> Created By </th>
+                                    <th _ngcontent-pst-c127="" class="w_custom_14"> Created Date </th>
+                                    <th _ngcontent-pst-c127="" class="w_custom_14"> Updated By </th>
+                                    <th _ngcontent-pst-c127="" class="w_custom_12"> Updated Date </th>
+                                </tr>
+                                <!---->
+                                <!---->
+                            </thead>
+                            <tbody class="p-datatable-tbody">
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> WE009 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> Wells Fargo</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                                <!---->
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> AD000 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> A.D.Infotech Corp</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                                <!---->
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> PU012 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> Purvis Industries, LLC</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> PU012 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> Purvis Industries, LLC</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> PU012 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> Purvis Industries, LLC</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> PU012 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> Purvis Industries, LLC</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> PU012 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> Purvis Industries, LLC</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> PU012 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> Purvis Industries, LLC</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> PU012 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> Purvis Industries, LLC</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> PU012 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> Purvis Industries, LLC</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> PU012 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> Purvis Industries, LLC</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> PU012 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> Purvis Industries, LLC</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                                <tr _ngcontent-pst-c127="" class="ng-star-inserted">
+                                    <td _ngcontent-pst-c127="" class="w_custom_3 text-center">
+                                        <div _ngcontent-pst-c127="" data-toggle="modal"
+                                            data-target="#add_def_client_modal" data-modalname="add_def_client_modal">
+                                            <span _ngcontent-pst-c127=""><img _ngcontent-pst-c127=""
+                                                    src="./images/icons/ic-edit-input.svg"
+                                                    alt="ic-edit-client"></span></div>
+                                    </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_9"> PU012 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> Purvis Industries, LLC</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"> 10/25/2021</td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_10"></td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> minhaj.mohamed </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> 10/25/2021 </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_14"> </td>
+                                    <td _ngcontent-pst-c127="" class="w_custom_12"> </td>
+                                </tr>
+                            </tbody>
+                            <!---->
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <!-- / edit record modal -->
+    <div class="modal in modal_xre max_width_45" id="editRecordModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Update Client</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body p_0">
+                    <!-- custom_modal_body part goes here -->
+                    <div class="custom_modal_body col-lg-12 p_2 d-flex">
+                        <div class="col-lg-7">
+                            <div class="form_control">
+                                <label for="ERName" class="text_10">Client Name</label>
+                                <input type="text" id="ERName" class="text_12">
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="form_control">
+                                <label for="DateofJoining" class="text_10">Start Date</label>
+                                <div class="input_icon">
+                                    <input type="text" id="EndDate" class="text_12" value="">
+                                    <span><img src="./images/icons/ic-calendar.svg" alt="ic-calendar" /></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="custom_modal_footer pb_0 pl_3 pr_3 pt_0">
+                        <div class="col-lg-12 p_0 text_right">
+                            <button class="secondary_btn">Reset</button>
+                            <button class="primary_btn ml_2">Update</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- edit record modal \ -->
+    <!-- modal -->
+    <!-- main wrapper -->
+</body>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script src="./js/script.js"></script>
+
+</html>
